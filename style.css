@@ -1,0 +1,238 @@
+body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff8fb;
+            color: #4a2c2a;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: white;
+        }
+
+        header img {
+            width: 200px;
+            max-width: 95%;
+            border-radius: 12px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #d65ea8;
+        }
+
+        .section {
+            padding: 15px 20px;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            font-size: 16px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .heart {
+            color: #ff6fb5;
+        }
+
+        .catalogo {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .catalogo img {
+            width: 110%;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+
+        .whatsapp-btn {
+            display: block;
+            width: 80%;
+            max-width: 310px;
+            margin: 25px auto;
+            padding: 6px;
+            text-align: center;
+            background: #25d366;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        .Instagram {
+            display: block;
+            width: 80%;
+            max-width: 310px;
+            margin: 10px auto;
+            padding: 6px;
+            text-align: center;
+            background: #C13584;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #ffd5e6;
+            margin-top: 30px;
+        }
+
+        /* CONFIGURAÇÕES GERAIS */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff8fb;
+    color: #4a2c2a;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 20px;
+    background: white;
+}
+
+header img {
+    width: 200px;
+    max-width: 95%;
+    border-radius: 12px;
+}
+
+/* TITULOS */
+h1, h2 {
+    text-align: center;
+    color: #d65ea8;
+}
+
+/* SEÇÕES */
+.section {
+    padding: 15px 20px;
+    max-width: 500px;
+    margin: auto;
+}
+
+/* LISTAS */
+ul {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.heart {
+    color: #ff6fb5;
+}
+
+/* CATÁLOGO */
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.catalogo img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* BOTÕES */
+.whatsapp-btn,
+.Instagram {
+    display: block;
+    width: 80%;
+    max-width: 310px;
+    margin: 25px auto 10px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.whatsapp-btn { background: #25d366; }
+.Instagram { background: #C13584; }
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #ffd5e6;
+    margin-top: 30px;
+}
+
+/* ----------------------------- */
+/*     MEDIA QUERIES MOBILE      */
+/* ----------------------------- */
+
+@media (max-width: 600px) {
+    header {
+        padding: 15px;
+    }
+
+    h1, h2 {
+        font-size: 1.4rem;
+    }
+
+    ul {
+        font-size: 15px;
+    }
+
+    .catalogo {
+        grid-template-columns: 1fr;
+    }
+
+    .catalogo img {
+        width: 100%;
+        height: auto;
+    }
+
+    .whatsapp-btn,
+    .Instagram {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .section {
+        padding: 10px 15px;
+    }
+}
+
+/* ----------------------------- */
+/*     TABLETS (600–900px)       */
+/* ----------------------------- */
+
+@media (min-width: 600px) and (max-width: 900px) {
+
+    h1, h2 {
+        font-size: 1.7rem;
+    }
+
+    .catalogo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
