@@ -1,60 +1,460 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="PT-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Doçuras da Lu</title>
+    <link rel="stylesheet" href="./Styles/style.css">
+    <link rel="stylesheet" href="./Styles/header.css">
+    <link rel="stylesheet" href="./Styles/home.css">
+    <link rel="stylesheet" href="./Styles/menu.css">
+    <link rel="stylesheet" href="./Styles/testimonial.css">
+    <link rel="stylesheet" href="./Styles/footer.css">
+    <link rel="stylesheet" href="./Styles/carrinho.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <title>Confeitaria</title>
 </head>
- 
-<body>
 
-    <!-- LOGO -->
+
+<body id="tudo">
     <header>
-        <img src="./Logo Luana.png" alt="Docuras da Lu Logo">
-    </header>
+        <nav id="navheader">
+            <i class="fa-solid fa-candy-cane" id="navlogo">DocurasdaLu</i>
 
-    <!-- SERVIÇOS -->
-    <section class="section">
-        <h1>Trabalhamos com:</h1>
-        <ul>
-            <li><span class="heart">💗</span> Bolos decorados, simples ou de cortes.</li>
-            <li><span class="heart">💗</span> Doces tradicionais ou gourmet.</li>
-            <li><span class="heart">💗</span> Bem-casados e brownies.</li>
-            <li><span class="heart">💗</span> Kits festa.</li>
-            <li><span class="heart">💗</span> Sobremesas.</li>
-            <li><span class="heart">💗</span> Delivery de doces e salgados.</li>
-        </ul>
-    </section>
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliação</a>
+                </li>
+            </ul>
 
-    <!-- GALERIA -->
-    <section class="section">
-        <h2>Conheça um pouco das nossas doçuras</h2>
+            <button class="btn-default">
+                Peça Aqui
+            </button>
 
-        <div class="catalogo">
-            <img src="./Doces Luana.png" alt="Doces Docuras da Lu">
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+
+        </nav>
+
+        <div id="mobile_menu">
+
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Início</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#menu">Cardápio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliação</a>
+                </li>
+
+            </ul>
+            <a href="https://wa.me/5521992638393?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido%20na%20Docuras%20da%20Lu.%20Pode%20me%20ajudar%3F"
+                class="btn-default" target="_blank">
+                Peça Aqui
+            </a>
+
+
+
         </div>
-    </section>
+    </header>
+    <main id="content">
 
-    <!-- BOTÃO WHATSAPP -->
-    <a class="whatsapp-btn"
-       href="https://wa.me/5521992638393?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido%20na%20Docuras%20da%20Lu.%20Pode%20me%20ajudar%3F"
-       target="_blank">
-        Fazer Pedido pelo WhatsApp 💬
-    </a>
-    <a class="Instagram"
-    href="https://www.instagram.com/docurasdalu.confeitaria_/?igsh=MWc2aDZyYWJnY3lmcQ%3D%3D&utm_source=qr"
-    target="_blank"> 
-    Acesse nosso Instagram 📸
-        
-    ></a>
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title">
+                    O sabor vai até <span>você</span>
+                </h1>
 
+                <p class="description">Somos uma confeitaria artesanal feita com carinho no conforto do nosso lar, onde
+                    cada doce é preparado à mão, com atenção aos detalhes e ingredientes selecionados. Aqui, acreditamos
+                    que confeitar vai muito além de receitas: é sobre criar momentos especiais, transformar pequenos
+                    instantes em memórias doces e levar um pedacinho de felicidade para cada cliente.
+                </p>
+
+                <div id="cta_buttons">
+                    <a href="https://www.instagram.com/docurasdalu.confeitaria_/?igsh=MWc2aDZyYWJnY3lmcQ%3D%3D&utm_source=qr"
+                        class="btn-default">Instagram</a>
+
+
+                    <a href="https://wa.me/5521992638393?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido%20na%20Docuras%20da%20Lu.%20Pode%20me%20ajudar%3F"
+                        id="phone_button">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone"></i>
+                            Whatsapp
+                        </button>
+                    </a>
+                </div>
+
+                <div class="social-media-buttons">
+
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="">
+
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+            <div id="banner">
+                <img src="./Assets/ChatGPT Image 21 de abr. de 2026, 12_08_14.png" alt="">
+            </div>
+
+
+
+        </section>
+
+        <section id="menu">
+            <h2 class="section-title">Cardápio</h2>
+            <h3 class="section-subtitle">Especiais</h3>
+
+            <div id="dishes">
+                <div class="dish">
+                    <div class=dish-heart>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="./Assets/brownie.png" class="dish-image" alt="">
+                    <h3 class="dish-title">
+                        Fatia Brownie
+                    </h3>
+                    <span class="dish-description">
+                        Fatia de Brownie com Cobertura de Nutella
+                    </span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$ 18,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+
+
+                        </button>
+                    </div>
+                </div>
+                <div class="dish">
+                    <div class=dish-heart>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="./Assets/pudim-removebg-preview.png" class="dish-image" alt="">
+                    <h3 class="dish-title">
+                        Pudim
+                    </h3>
+                    <span class="dish-description">
+                        Pudim cremoso
+                    </span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$ 8,00</h4>
+                          <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+
+
+                        </button>
+                    </div>
+                </div>
+                <div class="dish">
+                    <div class=dish-heart>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="./Assets/Torta-removebg-preview.png" class="dish-image" alt="">
+                    <h3 class="dish-title">
+                        Torta
+                    </h3>
+                    <span class="dish-description">
+                        Torta de chocolate com cobertura de chocolate branco
+                    </span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$ 20,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+
+
+                        </button>
+                    </div>
+                </div>
+                <div class="dish">
+                    <div class=dish-heart>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="./Assets/Trufa-removebg-preview.png" class="dish-image" alt="">
+                    <h3 class="dish-title">
+                        Brigadeiro
+                    </h3>
+                    <span class="dish-description">
+                        (Brigadeiro, Ninho C/Nutella, Ferreiro Rocher)
+                    </span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$ 3,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section id="testimonials">
+            <img src="./Assets/Lu-removebg-preview.png" id="termonial_chef" alt="">
+            <div id="testimonials_content">
+                <h2 class="section-title">
+                    Depoimentos
+                </h2>
+                <h3 class="section-subtitle">
+                    O que falam sobre nós
+                </h3>
+                <div id="feddbacks">
+                    <div class="feedback">
+                        <img src="./Assets/Avatar_Lu.png" class="feedback-avatar" alt="">
+                        <div class="feedback-content">
+
+                            <p id="testimonial_nome">
+                                Daiane
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+
+
+
+                                </span>
+
+
+
+                            </p>
+                            <p>
+                                “Simplesmente incríveis!”
+                                Os doces são maravilhosos, super bem feitos e com um sabor caseiro que faz toda
+                                diferença. Dá pra sentir o carinho em cada detalhe!
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="feddbacks">
+                    <div class="feedback">
+                        <img src="./Assets/Avatar_Lu.png" class="feedback-avatar" alt="">
+                        <div class="feedback-content">
+
+                            <p id="testimonial_nome">
+                                Andrea
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+
+
+
+                                </span>
+
+
+
+                            </p>
+                            <p>
+                                Encomendei para um aniversário e foi um sucesso total. Todo mundo elogiou e perguntou de
+                                onde eram os doces!
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="feddbacks">
+                    <div class="feedback">
+                        <img src="./Assets/Avatar_Lu.png" class="feedback-avatar" alt="">
+                        <div class="feedback-content">
+
+                            <p id="testimonial_nome">
+                                Michele
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+
+
+
+                                </span>
+
+
+
+                            </p>
+                            <p>
+                                Além de lindos, os doces são muito saborosos e fresquinhos. Dá pra ver que são feitos
+                                com ingredientes de qualidade.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="feddbacks">
+                    <div class="feedback">
+                        <img src="./Assets/Avatar_Lu.png" class="feedback-avatar" alt="">
+                        <div class="feedback-content">
+
+                            <p id="testimonial_nome">
+                                Nicole
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+
+
+
+                                </span>
+
+
+
+                            </p>
+                            <p>
+                                Sempre que preciso de algo especial, já sei onde pedir. Atendimento excelente e doces
+                                perfeitos!
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <button class="btn-default">
+                    Ver mais avaliações
+                </button>
+
+
+            </div>
+
+
+
+  </section>
+<section id="car">
+    <div class="car-buy">
+
+<h1>Seu Carrinho</h1>
+
+<p>Produtos:</p>
+
+<ul id="cart-items"></ul> <!-- 🔥 FALTAVA ISSO -->
+
+<p>Valor: <span id="total-value">R$ 0,00</span></p>
+
+<p>Seu endereço:</p>
+<input type="text" placeholder="Digite o endereço">
+
+<div id="button-finalizar">
+  <button id="button-close">Fechar</button>
+  <button id="limpar-carrinho">Limpar Carrinho</button>
+  <button id="button-end">Finalizar pedido</button>
+</div>
+
+</div>
+    </main>
+
+     
+
+</section>
     <footer>
-        © 2025 Docuras da Lu – Confeitaria
+        <svg viewBox="0 0 1920 366" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path fill="rgba(255, 249, 234, 1)"
+                d="M 0 300 C 388.40000000000003 300 582.5999999999999 110 971 110 L 971 110 L 971 0 L 0 0 Z"
+                stroke-width="0"></path>
+            <path fill="rgba(255, 249, 234, 1)" d="M 970 110 C 1350 110 1540 42 1920 42 L 1920 42 L 1920 0 L 970 0 Z"
+                stroke-width="0"></path>
+        </svg>
+        <div id="footer_items">
+            <span id="copyright">
+                &copy 2026 Rafael Fernandes
+            </span>
+            <div class="social-media-buttons">
+
+                <a href="">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+            </div>
+
+        </div>
     </footer>
 
-</body>
-</html>
+    <script src="./index.js"></script>
 
 </body>
+
+
 </html>

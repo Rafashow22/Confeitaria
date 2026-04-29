@@ -1,0 +1,21 @@
+footer{
+    
+background-color: #be448b;
+
+
+  }
+
+
+
+#footer_items{
+display: flex;
+justify-content: space-between;
+padding: 20px;
+align-items: center;
+
+}
+
+#copyright{
+    color:black;
+    font-weight: 500;
+}

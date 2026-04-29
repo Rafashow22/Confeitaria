@@ -1,0 +1,162 @@
+#car{
+ background: #ffff;
+  top: 50%;
+  position: absolute;
+  z-index: 999;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 60%;
+  height: 90%;
+  left: 20%;
+  border: 6px solid #be448b;
+  border-radius: 36px;
+
+}
+
+.car-buy{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+h1{
+    font-size: 32px;
+    color: #be448b;
+    text-align: center;
+}
+
+#button-finalizar{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#button-end{
+background-color: #be448b;
+width: 140px;
+  height: 40px;
+  border-radius: 9px;
+  color: white;
+  font-weight: bold;
+}
+#button-close{
+   width: 80px;
+  height: 40px;
+  border-radius: 9px;
+  font-weight: bold;
+}
+
+.controle-qtd {
+  display: flex;          /* 🔥 ESSENCIAL */
+  align-items: center;
+  gap: 10px;
+}
+
+button.btn-diminuir{
+   background-color: #be448b;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 7px;
+  font-weight: bold;
+}
+button.btn-aumentar{
+   background-color: #be448b;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 7px;
+  font-weight: bold;
+}
+span.qtd{
+    border: 3px solid #ddd;
+  width: 60px;
+  height: 40px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cake-icon {
+  color: #ff4d8d;
+  font-size: 24px;
+}
+button.btn-remover{
+   background-color: #f5b9cf;
+  border: 1px solid #ddd;
+  color: #ff4d8d;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.trash-icon {
+  color: #ff4d8d;
+  font-size: 20px;
+}
+
+#button-end:hover{
+    opacity: 0.5;
+}
+#button-close:hover{
+    opacity: 0.5;
+    }
+
+
+    .item-carrinho{
+width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 3px solid #ddd;
+    border-radius: 8px;
+}
+
+    
+@media screen and (max-width: 1170px){
+    #car{
+display: flex;
+    position: fixed;
+    top: 70px;
+    gap: 40px;
+    width: 70%;
+    height: 80%;
+    margin-left: 0px;
+    }
+.car-buy{
+
+    display: flex;
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 0px;
+}
+.item-carrinho{
+    width: 100%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  position: none;
+}
+
+}
